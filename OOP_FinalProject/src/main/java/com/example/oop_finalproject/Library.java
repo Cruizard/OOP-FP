@@ -12,7 +12,7 @@ public class Library extends Abstract
     }
 
 
-    public Library () //Collection
+    public Library ()
     {
         wordlibrary.add("Test");
         wordlibrary.add("Summit");
