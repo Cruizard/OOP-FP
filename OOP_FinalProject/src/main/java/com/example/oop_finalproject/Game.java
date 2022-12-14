@@ -3,6 +3,7 @@ package com.example.oop_finalproject;
 import java.util.Collections;
 import java.util.Scanner;
 
+//run here bcs GUI not properly implemented
 public class Game
 {
     public static void main(String[] args)
@@ -11,42 +12,57 @@ public class Game
         Scanner sc = new Scanner(System.in);
         Library lib = new Library();
 
-        System.out.println("Enter the words you wish to add to the library before we begin (end by typing stop): ");
+        System.out.println("Enter words you wish to add to the pre given library before we begin (end by typing stop): ");
         while (i==1)
         {
-            String werd = sc.nextLine();
+            String werd = sc.nextLine(); // Input
 
             if (werd .equals("stop"))
             {
                 break;
             }
-            lib.addwerd(werd);
+            lib.addword(werd);
         }
-        Collections.shuffle(lib.Getwords());
+        Collections.shuffle(lib.Getwords());//Polymorphism (list to arraylist)
 
         for (var werds: lib.Getwords())
         {
             System.out.println("Please type: ");
-            System.out.println(werds);
+            System.out.println(werds); // Output
 
             String answer = sc.nextLine();
 
 //            String[] answers = werds.split(" ");
 //            String[] input = answer.split(" ");
 //            for (int j=0 ; j<answers.length ; j++)
-
+            
             if (werds .equals(answer))
             {
-                System.out.print("true min \n");
+                printresult(true);
             }
             else
             {
-                System.out.print("wrong min \n");
+                printresult("Massive L there big man");
             }
 
 
         }
 
 
+    }
+    public static void printresult(boolean yes)//overloading
+    {
+        if (yes)
+        {
+            System.out.println("Based");
+        }
+        else
+        {
+            System.out.println("Massive L there big man");
+        }
+    }
+    public static void printresult(String result)
+    {
+        System.out.println(result);
     }
 }

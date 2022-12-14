@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -15,11 +16,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
+    //constructor
     public HelloApplication() {
     }
-
+    //override
     @Override
-    public void start(Stage stage) throws IOException
+    public void start(Stage stage) throws IOException // "GUI"
     {
         final VBox mainbox = new VBox(); //root
         final VBox mainmenu = new VBox();
@@ -36,7 +38,7 @@ public class HelloApplication extends Application {
         play.setPrefHeight(60);
 
         mainmenu.getChildren().addAll(play, addwerds, quit);
-        mainbox.getChildren().add(mainmenu);
+        mainbox.getChildren().add((Pane)mainmenu); //casting
         mainmenu.setAlignment(Pos.CENTER);
         mainmenu.setMinSize(480, 360);
         mainmenu.setSpacing(50);

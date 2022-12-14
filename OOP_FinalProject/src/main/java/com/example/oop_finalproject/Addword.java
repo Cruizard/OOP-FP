@@ -19,7 +19,7 @@ public class Addword
             {
                 break;
             }
-            lib.addwerd(werd);
+            lib.addword(werd);
         }
     }
 
