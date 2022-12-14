@@ -52,4 +52,4 @@ https://github.com/Cruizard/OOP-FP/blob/c3e9d12390c2cb01a5d802e4324b67c1dcd22b4e
 <b>Output</b>  
 https://github.com/Cruizard/OOP-FP/blob/c3e9d12390c2cb01a5d802e4324b67c1dcd22b4e/OOP_FinalProject/src/main/java/com/example/oop_finalproject/Game.java#L57-L66  
 
-P.S I underestimated my abilities and time management thus making an unfinished project for that i apologise and thou you in advance for visiting thsi repository
+<h6>P.S I underestimated my abilities and time management thus making an unfinished project, i understand that there will be consequences and  i apologise and thank you in advance for visiting this repository </h6>
